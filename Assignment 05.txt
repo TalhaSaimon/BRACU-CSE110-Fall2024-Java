@@ -1,0 +1,264 @@
+import java.util.Scanner;
+public class task1{
+  public static void main(String args[]){
+       Scanner sc = new Scanner(System.in);
+       String s1 = sc.nextLine();
+       char ch;
+       char n;
+      String output="";
+       for(int i =0; i<s1.length(); i++){
+         ch = s1.charAt(i);
+         if((ch >= 97) && (ch <=122)){
+         
+          n= (char)(ch-32);
+         output+=n;
+         }
+         else{output+=ch;}
+         
+         }
+       System.out.print(output);
+         
+         
+         }}
+
+import java.util.Scanner;
+public class task2{
+  public static void main(String [] args){
+   Scanner sc = new Scanner(System.in);
+   String s1 = sc.nextLine();
+   char ch;
+   String n ="";
+   for(int i =s1.length()-1; i>=0; i--){
+    ch = s1.charAt(i);
+    n += ch;
+     }
+   if(n.equals(s1)){
+    
+   System.out.println("true");
+   }
+   else{
+    
+     System.out.println("false");
+   }
+   }
+
+  }
+
+
+import java.util.Scanner;
+public class task3{
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    String s1 =sc.nextLine();
+    char s2 = sc.nextLine().charAt(0);
+    char ch;
+    String n="";
+    for(int i =0; i<s1.length();i++){
+      ch = s1.charAt(i);
+      if(ch==s2){
+        System.out.println(n);
+      }
+      else{
+         n=n+(char)(ch);  }
+      System.out.print(n);
+      n="";
+     }
+      
+  }}
+
+
+import java.util.Scanner;
+public class task4{
+  public static void main(String args[]){
+       Scanner sc = new Scanner(System.in);
+       String s1 = sc.nextLine();
+       for(int i =s1.length()-1; i>=0; i--){
+         System.out.print(s1.charAt(i));
+       }
+  }
+}
+
+
+import java.util.Scanner;
+public class task5{
+  public static void main(String [] args){
+   Scanner sc = new Scanner(System.in);
+   String s1 = sc.nextLine();
+   int vowelcount =0;
+   int consonantcount =0;
+   char ch ;
+     char a = 'a';
+     char e = 'e';
+     char i = 'i';
+     char o = 'o';
+     char u = 'u';
+     char a1 = 'A';
+     char e1 = 'E';
+     char i1 = 'I';
+     char o1 = 'O';
+     char u1 = 'U';
+   for(int j =0; j<s1.length();j++){
+     ch = s1.charAt(j);
+
+     if(ch==a || ch==e || ch==i || ch==o || ch==u || ch==a1 || ch==e1 || ch==i1 || ch==o1 || ch==u1){
+       vowelcount++;
+     }
+     else if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')){
+       consonantcount++;
+     }
+     else{}
+   }
+   if(vowelcount%3==0 && consonantcount%5==0){
+     System.out.println("Aaarr! Me Plunder!!");
+   }
+   else{
+     System.out.println("Blimey! No Plunder!!");
+   }
+  }
+}
+
+
+import java.util.Scanner;
+public class task6{
+  public static void main(String [] args){
+   Scanner sc = new Scanner(System.in);
+   String s1 = sc.nextLine();
+   String sum = "";
+   char ch;
+   for(int i = s1.length()-1; i>=0; i--){
+   
+     ch = s1.charAt(i);
+       sum = ch + sum;
+            
+       
+     if ( ch ==32 ){
+    System.out.print(sum);
+    sum ="";
+    
+     }
+     if(i==0){
+    System.out.print(" " +sum);
+    sum ="";
+    
+     }
+   }
+ 
+  }
+}
+
+import java.util.Scanner;
+public class task7{
+  public static void main(String [] args){
+   Scanner sc = new Scanner(System.in);
+      String s1 = sc.nextLine();
+      String s2 = sc.nextLine();
+      String result ="";
+      char ch;
+      char ch2;
+      char ch3;
+      char ch4;
+     for(int i =0; i<s1.length();i++){
+        ch = s1.charAt(i);
+        boolean val = false;
+        for(int i2 =0; i2<s2.length();i2++){
+          ch2 = s2.charAt(i2);
+          if(ch==ch2){
+            val = true; }
+          
+        }
+        if(val == false){
+        result += ch;}
+      }
+
+      for(int j =0; j<s2.length();j++){
+        ch3 = s2.charAt(j);
+        boolean val2 = false;
+        for(int j2 =0; j2<s1.length();j2++){
+          ch4 = s1.charAt(j2);
+          if(ch3==ch4){
+            val2 = true; }
+        }
+        if(val2 == false){
+          result += ch3;}
+      }
+      System.out.println(result.toUpperCase());
+  }}
+          
+
+import java.util.Scanner;
+public class task8{
+  public static void main(String [] args){
+   Scanner sc = new Scanner(System.in);
+   String s1 = sc.nextLine();
+   int count=0;
+   String sum ="";
+ for(int i =0; i<s1.length();i++){
+   char ch = s1.charAt(i);
+  if ((ch >= 97 && ch <= 122) || (ch >=65 && ch <=90)) {
+    count++;
+    if(count%2!=0){
+      if (ch >= 97 && ch <= 122){
+        sum+=ch;
+      }
+      else{
+        ch =(char)(ch+32);
+        sum+=ch;
+      }}
+    else{
+      if (ch >= 97 && ch <= 122){
+        ch = (char)(ch-32);
+        sum+=ch;
+      }
+      else{
+       sum+=ch;
+       
+      }
+     
+    }
+  }
+      else{
+      sum+=ch;
+      }
+      }
+      System.out.println(sum);
+}}
+
+
+
+import java.util.Scanner;
+public class task9{
+  public static void main(String [] args){
+   Scanner sc = new Scanner(System.in);
+   String s1 = sc.nextLine();
+   char ch;
+  
+   boolean lowercase_characters = false;
+   boolean uppercase_characters = false;
+   boolean digits = false;
+   boolean special_characters = false;
+   
+   if (s1.length()>=8){
+     for(int i =0; i<s1.length();i++){
+       ch =  s1.charAt(i);
+       if((ch >= 97) && (ch <=122)){
+       lowercase_characters = true;
+       }
+       else if ( ch >=65 && ch <=90){
+         uppercase_characters = true;
+       }
+       else if ( ch >=48 && ch <=57){
+       digits = true;
+       }
+       else if ( (ch >=33 && ch <=47) || (ch >= 58 && ch <=64) || (ch >= 91 && ch <=96)|| (ch >= 123 && ch <=126)){
+        special_characters = true;
+       }
+     }
+    
+   }
+   if ( s1.length()>=8 && lowercase_characters && uppercase_characters && digits && special_characters== true){
+     System.out.println("True");}
+     else{
+       System.out.println("False");
+     }
+  }
+}

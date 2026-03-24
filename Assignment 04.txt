@@ -1,0 +1,322 @@
+import java.util.Scanner;
+public class task1{
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("how many inputs do you want to provide?");
+    int num = sc.nextInt();
+    int sum = 0;
+    int average =0;
+    int count = 0;
+    int max =-999999;
+    int min =9999999;
+    for(int i =1;i<=num;i++){
+      
+    int n = sc.nextInt();
+   
+    if (n>0 && n%2==0){
+     sum += n;
+      count++;
+    }
+    if (n>max && n>0 && n%2==0){
+    max = n;
+    }
+    if(n<min && n>0 && n%2==0){
+    min = n;
+    }    
+    }
+    if (count > 0) {
+            average = sum / count;
+        } 
+    else {
+            System.out.println("0");
+        } 
+  System.out.println("Max: " + max);
+  System.out.println("Min: " + min);
+  System.out.println("Average: "+ average);               
+  }}
+
+
+import java.util.Scanner;
+public class task2{
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    int n = 0;
+    while(true){
+      System.out.println("Enter Number:");
+      int i = sc.nextInt();
+      if (i>=0){
+      n = i*i;
+      System.out.println(i +"^2 ="+n);
+      }
+      else{
+       break;
+      }
+      
+    }
+  }
+}
+
+
+import java.util.Scanner;
+public class task3 {
+public static void main(String[] args) {
+  Scanner sc = new Scanner(System.in);
+  System.out.println("Enter an integer:");
+  int n = sc.nextInt();
+  int count1 = 0;
+  int count2 =0;
+  for(int i=1; i<=n; i++){
+  System.out.println("Enter number "+i+":");
+  int num = sc.nextInt();
+  if(num>0){
+    count1++;
+    
+  }
+  else if(num==0){
+  }
+  else{
+  count2++;
+  }
+  }
+  System.out.println(count1+" Non-negative Numbers");
+  System.out.println(count2+" Negative Numbers");
+}}
+
+
+
+import java.util.Scanner;
+public class task4{
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    int n = sc.nextInt();
+    int primecount =0; 
+    int i =1;
+    while(true){
+      int count = 0;
+      for(int j=1; j<=i; j++){
+        if(i%j==0){
+          count++;
+        }}
+      if(count==2){
+      System.out.println(i);
+      primecount++;
+      
+      }
+      if(primecount==n){
+      break;
+      }
+      i++;
+    }
+    
+}
+}
+        
+
+
+import java.util.Scanner;
+public class task5{
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("The value of N: ");
+    int n = sc.nextInt();
+    int sum = 0;
+    int j = 0;
+    for(int i= 1; i<=n;i++){
+      j += i;
+      sum -=j;
+      
+    }
+    System.out.println("The value of y: "+sum);
+  }
+}
+
+
+
+
+
+import java.util.Scanner;
+public class task6{
+  public static void main(String [] args){
+     Scanner sc = new Scanner(System.in);
+    
+    
+    while(true){
+    
+  
+  int count = 0;
+  
+  
+  System.out.println("Enter Number: ");
+  int n = sc.nextInt();
+  if(n%2==0){  
+  
+  
+  for(int i =1; i<=n;i++)
+  {
+    if(n%i==0){
+    count++;
+    
+    }
+    else{
+    }
+   
+  }
+  System.out.println(n +" has "+count+ " divisors");
+  }
+  else{
+  break;
+  }
+  }
+  
+  }}
+
+
+
+
+
+
+
+import java.util.Scanner;
+public class task7{
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("The number of test cases");
+    int n = sc.nextInt();
+    for(int i =1; i<=n;i++){
+    System.out.println("X");
+    int x = sc.nextInt();
+    System.out.println("Y");                  
+    int y = sc.nextInt();
+    int count =0;
+    int sum = 0;
+    while(true){
+      if(x%2!=0){
+      sum+=x;
+      count++;
+    }
+    else{}
+    if(count==y){
+    System.out.println(sum);
+    break;
+    }
+    else{
+    x++;
+    }
+    }
+    }
+  }
+}
+
+
+
+
+
+
+import java.util.Scanner;
+public class task8{
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    int length = sc.nextInt();
+    int width = sc.nextInt();   
+    for(int i = 1;i<=width;i++){
+      
+      for(int n=1; n<=length;n++){
+      System.out.print(n);
+     
+ 
+      }
+    System.out.println();
+    
+    
+    }  
+  
+  }
+}
+
+
+
+
+
+
+import java.util.Scanner;
+public class task9{
+    public static void main(String [] args){
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      for(int i =1; i<=n; i++){
+        for(int k =1; k<=(n-i);k++){
+          System.out.print(" ");
+        }
+        for(int j =1; j<=i; j++){
+          System.out.print(j);}
+        System.out.println();
+      }}}
+    
+
+
+
+
+
+import java.util.Scanner;
+public class task10{
+    public static void main(String [] args){
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+
+      for (int i=1; i<=n;i++){
+        for (int j=1; j<=n-i;j++){
+        System.out.print(" ");
+        }
+        for(int k=1;k<=2*i-1;k++){
+        System.out.print(k);
+        }
+        System.out.println();
+      }
+    }
+}
+
+
+
+
+import java.util.Scanner;
+public class task11{
+  public static void main(String [] args){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Please enter a starting number");
+     int startnum = sc.nextInt();
+    System.out.println("Please enter an ending number");
+     int lastnum = sc.nextInt();
+     while(startnum<=lastnum){  
+       int num = startnum;
+       int sum =0;
+       while(num!=0){
+       int i =0;
+       i =num%10;
+       sum += Math.pow(i,3);
+       num = num/10;
+       
+       }
+       if(sum==startnum){
+       System.out.println(startnum);
+       }
+       
+       startnum++;
+     }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

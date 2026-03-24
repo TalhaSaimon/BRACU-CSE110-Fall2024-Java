@@ -1,0 +1,207 @@
+//Task 10
+public class task10 {
+public static void main(String[] args) {
+ int hungry;// Legal identifier
+ int 2AB;//Illegal indentifier. Identifiers can not start with a digit.
+ int 312.2;//Illegal indentifier. Identifiers can not start with a digit.
+ int MOBILE;// Legal identifier.
+ int “Ans”;//Illegal indentifier. Double qoute is not allowed in indentifiers. 
+ int $30;// Legal identifier.
+ int  Yes/No;//Illegal indentifier. Slashes can not be used in identifiers.
+ int student-id;//Illegal indentifier. Hyphen is not allowed in identifiers.
+ int A+3;//Illegal indentifier. Plus sign is not allowed in identifiers.
+ int 'X';//Illegal indentifier. Single qoute are not allowed in identifiers.
+ int return;//Illegal indentifier. "return" is a reserved keyword in Java.
+   
+ 
+  }
+}
+
+
+//Task 11
+public class task11 {
+public static void main(String[] args) {
+ //2.1
+ int a = 10;
+ System.out.println("An integer variable: "+a);
+ 
+ //2.2
+ int b = 5;
+ System.out.println("Summation of two integers: "+(a+b));
+ 
+ //2.3
+ System.out.println("Product of two integer numbers: "+(a*b));
+ System.out.println("Division of two integer numbers: "+(a/b));
+ 
+ //2.4
+ double x = 3d;
+ System.out.println("A double variable: "+x);
+ double y = 6;
+ System.out.println("Summation of two double variables: "+(x+y));
+ System.out.println("Product of two double variables: "+(x*y));
+ System.out.println("Division of two double variables: "+(x/y));
+ 
+ //2.5
+ int i = 200;
+ System.out.println(i);
+ double j = 60d;
+ System.out.println("Summation of one double variable and one integer variable: "+(i+j));
+ System.out.println("Product of one double variable and one integer variable: "+(i*j));
+ System.out.println("Division of one double variable and one integer variable: "+(i/j));
+ 
+ //2.6
+ String f = "10";
+ System.out.println("A String variable: "+f);
+ String g = "5";
+ System.out.println("Summation of two String variables: "+(f+g)); // Summation of two String numbers does not come as both are String variable.
+ 
+ int s = 10;
+ String n = "5";
+ System.out.println("Summation of one integer and one String variables: "+(s+g));// Changing first String variable to integer does not give different answer.
+ 
+ String m = "10";
+ int o = 5;
+ System.out.println("Summation of two String variables: "+(m+o));// Same, if I change the second number to an integer variable.
+ 
+  }
+}
+
+
+
+//Task 12
+public class task12 {
+  public static void main(String[] args) {
+    double radius = 4d;
+    double circumference = 2*Math.PI*radius;
+    double area = Math.PI*radius*radius;
+    
+    
+ System.out.println("Circumference:"+ circumference);
+ System.out.println("Area:"+ area);
+  }
+}
+
+//Task 13
+public class task13 {
+public static void main(String[] args) {
+ int x = 5963;
+ int y = x%100;
+ System.out.println("Last 2 Digits are: "+ y);
+  }
+}
+
+
+
+//Task 14
+public class task14 {
+public static void main(String[] args) {
+  double inch = 1000d;
+  double meter = inch*0.0254;
+  
+ System.out.println("1000 Inches In Meter is " + meter + " Meters");
+  }
+}
+
+//Task 15_a
+public class task15_a {
+public static void main(String[] args) {
+  int a = 5;
+  int b = 6;
+  int c = a+b;
+      a = c-a;
+      b = c-b;
+ System.out.println("a = "+ a);
+ System.out.println("b = "+ b);
+  }
+}
+
+
+
+//Task 15_b
+public class task15_b {
+public static void main(String[] args) {
+  int a = 5;
+  int b = 6;
+  
+      a = a+b;
+      b = a-b;
+      a = a-b;
+      
+      System.out.println("a = " + a);
+      System.out.println("b = " + b);
+  }
+}
+
+
+
+//Task 16
+public class task16 {
+public static void main(String[] args) {
+  int minutes = 3456789;
+  int days = minutes/(60*24);
+  int years = days/365;
+  int days1 = days%365;
+  
+ System.out.println(years + " Years " + days1 +" Days");
+  }
+}
+
+
+
+//Task 17
+public class task17 {
+public static void main(String[] args) {
+  int a = 2, b = 5,c = 8;
+  int d = (2*b*((c-a)/3)+7);
+  
+ System.out.println("d = "+ d);
+  }
+}
+
+
+
+//Task 18
+public class task18 {
+public static void main(String[] args) {
+  int a = 23221454;
+  int b = a%100;
+  int c = b/10;
+  int d = b%10;
+  
+  System.out.println(d);
+  System.out.println(c);
+}
+}
+
+
+//Task 19
+public class task19 {
+public static void main(String[] args) {
+  int a = 8;
+  int b = 3;
+  int c = a/2;
+  double one_hexagon_side = Math.sqrt((b*b)+(c*c)); //Using pythagoras formula to get one side of the hexagon
+  double area_of_hexagon = (3*Math.sqrt(3)*(one_hexagon_side*one_hexagon_side))/2;
+  double circumference_of_hexagon = 6*one_hexagon_side;
+ System.out.println("One Hexagon Side = "+one_hexagon_side);
+ System.out.println("Area Of Hexagon = "+area_of_hexagon);
+ System.out.println("Circumference Of Hexagon = "+circumference_of_hexagon);
+  }
+}
+
+//Task 20
+public class task20 {
+public static void main(String[] args) {
+ double a = 4.5;
+ double b = 9.5;
+ double c = Math.sqrt((a*a)+(b*b));
+ System.out.println("Sin(A) = "+(a/c));
+ System.out.println("Cos(A) = "+(b/c));
+ System.out.println("Sin(B) = "+(b/c));
+ System.out.println("Cos(B) = "+(a/c));
+  }
+}
+
+
+
+
